@@ -1,0 +1,60 @@
+@tailwind components;
+@layer components {
+  .user-nav {
+    @apply bg-purple-500;
+    @apply text-white;
+    @apply grid grid-cols-2 justify-items-stretch;
+    @apply w-full h-10 leading-10;
+    @apply pl-5 pr-5;
+  }
+  .user-nav .left-div {
+    @apply grid grid-cols-3 gap-3;
+  }
+  .user-nav .left-div .contact {
+    @apply col-span-2;
+    @apply grid grid-cols-3 justify-items-center;
+  }
+  .user-nav .left-div .contact .contact-item {
+    @apply font-bold;
+    @apply cursor-pointer;
+  }
+  .user-nav .left-div .contact .contact-item:hover {
+    @apply text-purple-700 duration-500;
+  }
+  .user-nav .left-div .social-media .social-media-item {
+    @apply w-8;
+    @apply cursor-pointer;
+  }
+  .user-nav .left-div .social-media .social-media-item:hover {
+    @apply text-purple-700 duration-500;
+  }
+  .user-nav .right-div {
+    @apply justify-self-end;
+    @apply flex;
+  }
+  .user-nav .right-div .login-btn-container .login-btn {
+    @apply w-20 h-7 leading-7;
+    @apply bg-white text-black border border-black;
+    @apply font-bold;
+  }
+  .user-nav .right-div .login-btn-container .login-btn:hover {
+    @apply bg-gray-200 duration-500;
+  }
+  .user-nav .right-div .login-btn-container .logged-in-btn {
+    @apply w-20 h-7 leading-7;
+    @apply text-white border border-white;
+    @apply font-bold;
+  }
+  .user-nav .right-div .login-btn-container .logged-in-btn:hover {
+    @apply underline;
+  }
+  .user-nav .right-div .register-btn-container {
+    @apply ml-5;
+  }
+  .user-nav .right-div .register-btn-container .register-btn {
+    @apply w-20 h-7 leading-7;
+    @apply bg-black;
+    @apply font-bold;
+  }
+}
+/*# sourceMappingURL=UserNav.css.map */

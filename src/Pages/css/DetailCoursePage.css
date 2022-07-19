@@ -1,0 +1,125 @@
+@tailwind components;
+@layer components {
+  .detail-course {
+    @apply w-full h-auto;
+  }
+  .detail-course .detail-course-header-container {
+    @apply w-full h-72;
+    @apply py-5;
+    @apply bg-black;
+  }
+  .detail-course .detail-course-header-container .detail-course-header-inner {
+    @apply w-9/12 mx-auto;
+  }
+  .detail-course .detail-course-header-container .detail-course-header-inner .website-direction-path {
+    @apply text-purple-400;
+    @apply text-base font-bold;
+    @apply w-7/12 my-2;
+  }
+  .detail-course .detail-course-header-container .detail-course-header-inner .course-title {
+    @apply text-white;
+    @apply text-3xl font-bold;
+    @apply w-7/12 my-2;
+  }
+  .detail-course .detail-course-header-container .detail-course-header-inner .course-description {
+    @apply text-white;
+    @apply text-xl;
+    @apply w-7/12 my-2;
+  }
+  .detail-course .detail-course-header-container .detail-course-header-inner .member-figure {
+    @apply text-white;
+    @apply text-base;
+    @apply w-7/12 my-1;
+  }
+  .detail-course .detail-course-header-container .detail-course-header-inner .member-figure .member-figure-icon {
+    @apply mr-1;
+  }
+  .detail-course .detail-course-header-container .detail-course-header-inner .course-author {
+    @apply text-white;
+    @apply text-base;
+    @apply w-7/12 my-1;
+  }
+  .detail-course .detail-course-body {
+    @apply w-9/12 h-auto mx-auto mt-8 mb-5;
+    @apply grid grid-cols-12;
+  }
+  .detail-course .detail-course-body .left-div {
+    @apply col-span-8;
+  }
+  .detail-course .detail-course-body .left-div .course-scope-container {
+    @apply w-11/12 h-auto;
+    @apply bg-white border border-gray-400;
+    @apply p-5;
+  }
+  .detail-course .detail-course-body .left-div .course-scope-container .course-scope-inner .course-scope-title {
+    @apply text-2xl font-bold;
+    @apply mb-2;
+  }
+  .detail-course .detail-course-body .left-div .course-scope-container .course-scope-inner .scope-item-list {
+    @apply flex flex-wrap flex-row;
+  }
+  .detail-course .detail-course-body .left-div .course-scope-container .course-scope-inner .scope-item-list .scope-item {
+    @apply w-6/12;
+    @apply text-sm;
+    @apply py-1;
+  }
+  .detail-course .detail-course-body .left-div .course-scope-container .course-scope-inner .scope-item-list .scope-item .scope-item-icon {
+    @apply mr-1;
+  }
+  .detail-course .detail-course-body .right-div {
+    @apply col-span-4;
+    @apply relative;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container {
+    @apply w-11/12 h-auto mx-auto;
+    @apply bg-white shadow-xl;
+    @apply absolute bottom-0;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card {
+    @apply w-full;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card .course-cover {
+    @apply w-full p-1;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card .price-section {
+    @apply w-9/12 mx-auto;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card .price-section .course-price {
+    @apply flex justify-items-center;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card .price-section .course-price .price-after-promotion {
+    @apply text-4xl font-bold;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card .price-section .course-price .price-before-promotion {
+    @apply text-lg;
+    @apply text-gray-500;
+    @apply my-auto mx-2;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card .price-section .course-price .promotion-discount-percent {
+    @apply text-lg;
+    @apply text-gray-800;
+    @apply my-auto;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card .price-section .course-promotion-deadline {
+    @apply text-center;
+    @apply text-red-700;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card .purchase-btn-section {
+    @apply w-11/12 mx-auto;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card .purchase-btn-section .add-to-cart-btn {
+    @apply w-full py-2 my-2;
+    @apply bg-purple-500;
+    @apply text-white font-bold text-lg;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card .purchase-btn-section .buy-now-btn {
+    @apply w-full py-2 my-2;
+    @apply bg-white border border-black;
+    @apply font-bold text-lg;
+  }
+  .detail-course .detail-course-body .right-div .side-bar-container .course-purchase-card .purchase-btn-section .purchase-short-policy {
+    @apply w-full mt-5 pb-2;
+    @apply text-center text-xs;
+  }
+}
+/*# sourceMappingURL=DetailCoursePage.css.map */

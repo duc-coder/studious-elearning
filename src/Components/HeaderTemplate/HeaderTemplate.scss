@@ -1,0 +1,85 @@
+@tailwind components;
+
+@layer components {
+    .header {
+        @apply w-full h-16;
+        @apply bg-white shadow-md;
+        @apply mb-2;
+        .header-container {
+            @apply mx-5;
+            @apply grid grid-cols-12;
+            .left-div {
+                @apply col-span-7;
+                @apply grid grid-cols-12;
+                .logo {
+                    @apply flex;
+                    @apply col-span-3;
+                    @apply cursor-pointer;
+                    .logo-image {
+                        @apply w-16 h-16 bg-cover;
+                    };
+                    .logo-name {
+                        @apply my-auto ml-2;
+                        @apply text-3xl text-purple-500 font-bold;
+                    };
+                };
+                .category {
+                    @apply col-span-2;
+                    @apply my-auto;
+                    .category-select-btn {
+                        @apply w-full;
+                    };
+                    .ant-select-arrow {
+                        @apply text-white;
+                    };
+                    .ant-select-selector {
+                        @apply border-none shadow-none;
+                    };
+                    .ant-select-selection-placeholder {
+                        @apply text-black text-base;
+                        @apply my-auto;
+                    };
+                };
+                .search-bar {
+                    @apply col-span-7;
+                    @apply my-auto;
+                    @apply w-full;
+                    .ant-input-affix-wrapper {
+                        @apply text-purple-500;
+                        @apply rounded-2xl;
+                        @apply h-10;
+                    };
+                    .ant-input::placeholder {
+                        @apply text-gray-700;
+                    };
+                };
+            };
+            .right-div {
+                @apply col-span-5;
+                @apply grid grid-cols-12;
+                @apply my-auto;
+                .nav-bar {
+                    @apply col-span-11;
+                    @apply grid grid-cols-4 justify-items-center;
+                    .nav-item {
+                        @apply text-sm;
+                        @apply cursor-pointer;
+                        &:hover {
+                            @apply text-purple-900 duration-500;
+                        };
+                    };
+                };
+                .cart {
+                    @apply col-span-1;
+                    .cart-icon {
+                        @apply text-lg;
+                        @apply cursor-pointer;
+                        &:hover {
+                            @apply text-purple-900 duration-500;
+                        };
+                    };
+                };
+            };
+        }
+    };
+};

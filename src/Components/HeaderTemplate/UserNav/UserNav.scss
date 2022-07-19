@@ -1,0 +1,64 @@
+@tailwind components;
+
+@layer components {
+    .user-nav {
+        @apply bg-purple-500;
+        @apply text-white;
+        @apply grid grid-cols-2 justify-items-stretch;
+        @apply w-full h-10 leading-10;
+        @apply pl-5 pr-5;
+        .left-div {
+            @apply grid grid-cols-3 gap-3;
+            .contact {
+                @apply col-span-2;
+                @apply grid grid-cols-3 justify-items-center;
+                .contact-item {
+                    @apply font-bold;
+                    @apply cursor-pointer;
+                    &:hover {
+                        @apply text-purple-700 duration-500;
+                    };
+                };
+            };
+            .social-media {
+                .social-media-item {
+                    @apply w-8;
+                    @apply cursor-pointer;
+                    &:hover {
+                        @apply text-purple-700 duration-500;
+                    };
+                };
+            };
+        };
+        .right-div {
+            @apply justify-self-end;
+            @apply flex;
+            .login-btn-container {
+                .login-btn {
+                    @apply w-20 h-7 leading-7;
+                    @apply bg-white text-black border border-black;
+                    @apply font-bold;
+                    &:hover {
+                        @apply bg-gray-200 duration-500;
+                    };
+                };
+                .logged-in-btn {
+                    @apply w-20 h-7 leading-7;
+                    @apply text-white border border-white;
+                    @apply font-bold;
+                    &:hover {
+                        @apply underline;
+                    };
+                }
+            };
+            .register-btn-container {
+                @apply ml-5;
+                .register-btn{
+                    @apply w-20 h-7 leading-7;
+                    @apply bg-black;
+                    @apply font-bold;
+                };
+            };
+        };
+    };
+};

@@ -1,0 +1,43 @@
+@tailwind components;
+@layer components {
+  .featured-category {
+    @apply w-full h-auto;
+  }
+  .featured-category .featured-category-container {
+    @apply w-11/12 h-auto mx-auto px-7;
+    @apply grid grid-cols-4 justify-items-center gap-4;
+  }
+  .featured-category .featured-category-container .category-item-container {
+    @apply w-full h-52;
+    @apply flex items-center;
+    @apply rounded-2xl;
+    @apply shadow-lg;
+  }
+  .featured-category .featured-category-container .category-item-container .category-item-inner {
+    @apply flex flex-wrap;
+    @apply w-full;
+  }
+  .featured-category .featured-category-container .category-item-container .category-item-inner .category-icon {
+    @apply w-full;
+    @apply text-center;
+    @apply text-6xl text-white;
+  }
+  .featured-category .featured-category-container .category-item-container .category-item-inner .category-title {
+    @apply w-full mt-4;
+    @apply text-center;
+    @apply text-4xl font-bold text-white;
+  }
+  .featured-category .featured-category-container .container-1 {
+    @apply bg-blue-400;
+  }
+  .featured-category .featured-category-container .container-2 {
+    @apply bg-yellow-400;
+  }
+  .featured-category .featured-category-container .container-3 {
+    @apply bg-red-400;
+  }
+  .featured-category .featured-category-container .container-4 {
+    @apply bg-green-400;
+  }
+}
+/*# sourceMappingURL=HomeFeaturedCategoryCard.css.map */

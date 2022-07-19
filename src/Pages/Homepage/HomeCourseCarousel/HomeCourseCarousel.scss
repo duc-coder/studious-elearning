@@ -1,0 +1,117 @@
+@tailwind components;
+
+@layer components {
+    .home-course-carousel {
+        @apply w-full h-auto mt-5;
+        .carousel-header-container {
+            @apply w-11/12 h-auto mx-auto;
+            .carousel-header {
+                @apply text-4xl font-bold;
+            };
+            .carousel-description {
+                @apply text-xl;
+                @apply my-3;
+            };
+            .category-text-list {
+                @apply w-full;
+                @apply flex justify-start; 
+                .category-item {
+                    @apply mx-3;
+                    @apply text-base font-bold;
+                    @apply text-gray-500;
+                    &:hover {
+                        @apply text-black;
+                    };
+                };
+            };
+        };
+        .carousel-body-container {
+            @apply w-11/12 h-auto mx-auto mt-5;
+            @apply px-5 py-5;
+            @apply border-black border;
+            @apply relative;
+            .body-header-container {
+                @apply w-full;
+                .body-header {
+                    @apply w-full;
+                    @apply text-2xl font-bold;
+                };
+                .body-description {
+                    @apply w-10/12;
+                    @apply my-5;
+                    @apply text-lg;
+                };
+                .see-more-category-btn {
+                    @apply border border-black bg-white;
+                    @apply px-3 py-2;
+                    @apply font-bold;
+                    &:hover {
+                        @apply bg-gray-300;
+                    };
+                };
+            };
+            .body-content-container {
+                @apply w-full mt-5;
+                .body-content-slider {
+                    .slick-track {
+                    };
+                    .slick-slide {
+                        @apply px-2;
+                    };
+                    .slider-item {
+                        @apply cursor-pointer;
+                        @apply relative;
+                        @apply shadow-lg;
+                        @apply h-72 mb-3;
+                        &:hover {
+                            .course-title {
+                                @apply text-purple-500;
+                            };
+                            .course-cover-filter-hover {
+                                @apply backdrop-opacity-10 backdrop-invert bg-black/30;     
+                                @apply w-11/12 h-36 mx-auto;
+                                @apply absolute z-10 top-0 left-3;
+                            };
+                        };
+                        .course-cover {
+                            @apply bg-no-repeat;
+                            @apply w-11/12 h-36 mx-auto;
+                        };
+                        .course-title {
+                            @apply w-11/12 mx-auto;
+                            @apply text-lg font-bold;
+                        };
+                        .course-author {
+                            @apply w-11/12 mx-auto;
+                            @apply text-base italic;
+                            @apply text-gray-500;
+                        };
+                        .course-figures {
+                            @apply w-11/12 mx-auto;
+                            @apply flex;
+                            @apply text-base;
+                            .view-number {
+                                @apply text-red-500;
+                            };
+                            .member-number {
+                                @apply ml-5;
+                                @apply text-blue-500;
+                            };
+                        };
+                    };
+                };
+            };
+            .slider-direct-btn {
+                @apply absolute top-80 left-0;
+                @apply w-full mx-auto mt-9;
+                @apply text-4xl;
+                .left-btn {
+                    @apply absolute left-0;
+                };
+                .right-btn {
+                    @apply absolute right-0;
+                };
+            };
+        };
+    };
+};

@@ -1,0 +1,61 @@
+@tailwind components;
+
+@layer components {
+    .home-banner {
+        @apply w-full h-auto;
+        @apply relative;
+        .home-banner-container {
+            .home-banner-slider {
+                .slick-dots {
+                    @apply absolute bottom-4;
+                    li {
+                        button:before {
+                            @apply text-purple-800 text-base;
+                        };
+                    };
+                };
+                .slider-item {
+                    .banner-image-container {
+                        .banner-image {
+                            @apply mx-auto;
+                        };
+                    };
+                    .banner-content-container {
+                        @apply absolute z-10 top-10;
+                        @apply ml-48;
+                        .banner-slogan {
+                            @apply w-4/12 h-auto py-2; 
+                            @apply bg-white shadow-lg;
+                            @apply flex items-stretch flex-wrap;
+                            .slogan-text-heading {
+                                @apply pl-5;
+                                @apply w-full self-center;
+                                @apply text-4xl font-bold;
+                            };
+                            .slogan-text-body {
+                                @apply pl-5 mt-2;
+                                @apply w-10/12 self-center;
+                                @apply text-base;
+                            };
+                        };
+                        .see-more-btn {
+                            @apply bg-purple-500 text-white font-bold;
+                            @apply px-7 py-3 mt-5;
+                        };
+                    };
+                };
+            };
+            .slider-direct-btn {
+                @apply absolute top-2/4 left-16;
+                @apply w-11/12 mx-auto;
+                @apply text-4xl;
+                .left-btn {
+                    @apply absolute left-0;
+                };
+                .right-btn {
+                    @apply absolute right-0;
+                };
+            };
+        };
+    };
+};

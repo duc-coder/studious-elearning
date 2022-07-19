@@ -1,0 +1,111 @@
+@tailwind components;
+@layer components {
+  .home-course-carousel {
+    @apply w-full h-auto mt-5;
+  }
+  .home-course-carousel .carousel-header-container {
+    @apply w-11/12 h-auto mx-auto;
+  }
+  .home-course-carousel .carousel-header-container .carousel-header {
+    @apply text-4xl font-bold;
+  }
+  .home-course-carousel .carousel-header-container .carousel-description {
+    @apply text-xl;
+    @apply my-3;
+  }
+  .home-course-carousel .carousel-header-container .category-text-list {
+    @apply w-full;
+    @apply flex justify-start;
+  }
+  .home-course-carousel .carousel-header-container .category-text-list .category-item {
+    @apply mx-3;
+    @apply text-base font-bold;
+    @apply text-gray-500;
+  }
+  .home-course-carousel .carousel-header-container .category-text-list .category-item:hover {
+    @apply text-black;
+  }
+  .home-course-carousel .carousel-body-container {
+    @apply w-11/12 h-auto mx-auto mt-5;
+    @apply px-5 py-5;
+    @apply border-black border;
+    @apply relative;
+  }
+  .home-course-carousel .carousel-body-container .body-header-container {
+    @apply w-full;
+  }
+  .home-course-carousel .carousel-body-container .body-header-container .body-header {
+    @apply w-full;
+    @apply text-2xl font-bold;
+  }
+  .home-course-carousel .carousel-body-container .body-header-container .body-description {
+    @apply w-10/12;
+    @apply my-5;
+    @apply text-lg;
+  }
+  .home-course-carousel .carousel-body-container .body-header-container .see-more-category-btn {
+    @apply border border-black bg-white;
+    @apply px-3 py-2;
+    @apply font-bold;
+  }
+  .home-course-carousel .carousel-body-container .body-header-container .see-more-category-btn:hover {
+    @apply bg-gray-300;
+  }
+  .home-course-carousel .carousel-body-container .body-content-container {
+    @apply w-full mt-5;
+  }
+  .home-course-carousel .carousel-body-container .body-content-container .body-content-slider .slick-slide {
+    @apply px-2;
+  }
+  .home-course-carousel .carousel-body-container .body-content-container .body-content-slider .slider-item {
+    @apply cursor-pointer;
+    @apply relative;
+    @apply shadow-lg;
+    @apply h-72 mb-3;
+  }
+  .home-course-carousel .carousel-body-container .body-content-container .body-content-slider .slider-item:hover .course-title {
+    @apply text-purple-500;
+  }
+  .home-course-carousel .carousel-body-container .body-content-container .body-content-slider .slider-item:hover .course-cover-filter-hover {
+    @apply backdrop-opacity-10 backdrop-invert bg-black/30;
+    @apply w-11/12 h-36 mx-auto;
+    @apply absolute z-10 top-0 left-3;
+  }
+  .home-course-carousel .carousel-body-container .body-content-container .body-content-slider .slider-item .course-cover {
+    @apply bg-no-repeat;
+    @apply w-11/12 h-36 mx-auto;
+  }
+  .home-course-carousel .carousel-body-container .body-content-container .body-content-slider .slider-item .course-title {
+    @apply w-11/12 mx-auto;
+    @apply text-lg font-bold;
+  }
+  .home-course-carousel .carousel-body-container .body-content-container .body-content-slider .slider-item .course-author {
+    @apply w-11/12 mx-auto;
+    @apply text-base italic;
+    @apply text-gray-500;
+  }
+  .home-course-carousel .carousel-body-container .body-content-container .body-content-slider .slider-item .course-figures {
+    @apply w-11/12 mx-auto;
+    @apply flex;
+    @apply text-base;
+  }
+  .home-course-carousel .carousel-body-container .body-content-container .body-content-slider .slider-item .course-figures .view-number {
+    @apply text-red-500;
+  }
+  .home-course-carousel .carousel-body-container .body-content-container .body-content-slider .slider-item .course-figures .member-number {
+    @apply ml-5;
+    @apply text-blue-500;
+  }
+  .home-course-carousel .carousel-body-container .slider-direct-btn {
+    @apply absolute top-80 left-0;
+    @apply w-full mx-auto mt-9;
+    @apply text-4xl;
+  }
+  .home-course-carousel .carousel-body-container .slider-direct-btn .left-btn {
+    @apply absolute left-0;
+  }
+  .home-course-carousel .carousel-body-container .slider-direct-btn .right-btn {
+    @apply absolute right-0;
+  }
+}
+/*# sourceMappingURL=HomeCourseCarousel.css.map */

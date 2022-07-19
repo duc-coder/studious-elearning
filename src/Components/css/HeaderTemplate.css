@@ -1,0 +1,94 @@
+@tailwind components;
+@layer components {
+  .header {
+    @apply w-full h-16;
+    @apply bg-white shadow-md;
+    @apply mb-2;
+  }
+  .header .header-container {
+    @apply mx-5;
+    @apply grid grid-cols-12;
+  }
+  .header .header-container .left-div {
+    @apply col-span-7;
+    @apply grid grid-cols-12;
+  }
+  .header .header-container .left-div .logo {
+    @apply flex;
+    @apply col-span-3;
+    @apply cursor-pointer;
+  }
+  .header .header-container .left-div .logo .logo-image {
+    @apply w-16 h-16 bg-cover;
+  }
+  .header .header-container .left-div .logo .logo-name {
+    @apply my-auto ml-2;
+    @apply text-3xl text-purple-500 font-bold;
+  }
+  .header .header-container .left-div .category {
+    @apply col-span-2;
+    @apply my-auto;
+  }
+  .header .header-container .left-div .category .category-select-btn {
+    @apply w-full;
+  }
+  .header .header-container .left-div .category .ant-select-arrow {
+    @apply text-white;
+  }
+  .header .header-container .left-div .category .ant-select-selector {
+    @apply border-none shadow-none;
+  }
+  .header .header-container .left-div .category .ant-select-selection-placeholder {
+    @apply text-black text-base;
+    @apply my-auto;
+  }
+  .header .header-container .left-div .search-bar {
+    @apply col-span-7;
+    @apply my-auto;
+    @apply w-full;
+  }
+  .header .header-container .left-div .search-bar .ant-input-affix-wrapper {
+    @apply text-purple-500;
+    @apply rounded-2xl;
+    @apply h-10;
+  }
+  .header .header-container .left-div .search-bar .ant-input::-webkit-input-placeholder {
+    @apply text-gray-700;
+  }
+  .header .header-container .left-div .search-bar .ant-input:-ms-input-placeholder {
+    @apply text-gray-700;
+  }
+  .header .header-container .left-div .search-bar .ant-input::-ms-input-placeholder {
+    @apply text-gray-700;
+  }
+  .header .header-container .left-div .search-bar .ant-input::placeholder {
+    @apply text-gray-700;
+  }
+  .header .header-container .right-div {
+    @apply col-span-5;
+    @apply grid grid-cols-12;
+    @apply my-auto;
+  }
+  .header .header-container .right-div .nav-bar {
+    @apply col-span-11;
+    @apply grid grid-cols-4 justify-items-center;
+  }
+  .header .header-container .right-div .nav-bar .nav-item {
+    @apply text-sm;
+    @apply cursor-pointer;
+  }
+  .header .header-container .right-div .nav-bar .nav-item:hover {
+    @apply text-purple-900 duration-500;
+  }
+  .header .header-container .right-div .cart {
+    @apply col-span-1;
+  }
+  .header .header-container .right-div .cart .cart-icon {
+    @apply text-lg;
+    @apply cursor-pointer;
+  }
+  .header .header-container .right-div .cart .cart-icon:hover {
+    @apply text-purple-900 duration-500;
+  }
+}
+/*# sourceMappingURL=HeaderTemplate.css.map */
